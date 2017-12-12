@@ -1,0 +1,3 @@
+#include "zcmd.inc"
+
+main(){}
