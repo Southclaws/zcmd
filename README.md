@@ -6,16 +6,29 @@ The original topic and documentation [is here](http://forum.sa-mp.com/showthread
 
 @Zeex: If you want to host this on your own account, open an issue and I will delete this repository.
 
-## Usage
+## Installation
 
-Simply add to your `pawn.json` and include:
+Simply install to your project:
 
-```json
-{
-    "dependencies": ["Southclaws/zcmd"]
-}
+```bash
+sampctl package install Southclaws/zcmd
 ```
+
+Include in your code and begin using the library:
 
 ```pawn
 #include <zcmd>
+```
+
+## Usage
+
+For usage documentation, please see the original post linked above.
+
+Quick example in case that link ever breaks:
+
+```pawn
+CMD:help(playerid, params[]) {
+    SendClientMessage(playerid, 0xFFFF00FF, "This is the help command");
+    return 1;
+}
 ```
